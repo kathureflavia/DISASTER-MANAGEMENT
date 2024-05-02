@@ -1,0 +1,205 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+#map {
+  height: 100%;
+  z-index: 0;
+}
+
+#switchLayer {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #e57373;
+  /* Redish background color */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+  /* Ensure it's above the map */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  /* Optional: Add a shadow */
+  transition: background-color 0.2s ease;
+  /* Smooth hover effect */
+}
+
+#switchLayer:hover {
+  background-color: #ef5350;
+  /* Darker red on hover */
+}
+
+
+
+
+#switchLayer:hover {
+  background-color: #0056b3;
+  /* Button color on hover */
+}
+
+
+
+
+.routing {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffcccc;
+  /* Light red */
+  padding: 10px;
+  border: 1px solid #ff9999;
+  /* Lighter red for border */
+  border-radius: 5px;
+  z-index: 1001;
+}
+
+.legend {
+  position: absolute;
+  top: 270px;
+  /* Adjust as needed */
+  left: 10px;
+  /* Adjust as needed */
+  background-color: #ffebee;
+  /* Redish background color */
+  padding: 10px;
+  border: 1px solid #e57373;
+  /* Redish border color */
+  border-radius: 5px;
+  z-index: 1000;
+  /* Ensure it's above the map */
+}
+
+.legend-item {
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.legend-icon {
+  width: 20px;
+  /* Adjust icon size as needed */
+  height: 20px;
+  /* Adjust icon size as needed */
+  margin-right: 5px;
+}
+
+.legend-text {
+  font-size: 14px;
+  color: #e57373;
+  /* Redish text color */
+}
+
+
+
+
+
+
+/* Styles for select with ID layerSelect */
+#layerSelect {
+  background-color: #ff9999;
+  /* Red background */
+  color: white;
+  /* White text color */
+  padding: 5px;
+  /* Adjust padding as needed */
+  border: none;
+  /* Remove border */
+  border-radius: 3px;
+  cursor: pointer;
+  /* Show pointer cursor on hover */
+  margin-right: 10px;
+  /* Add spacing between select and button */
+}
+
+/* Styles for button with ID findButton */
+#findButton {
+  background-color: #ff9999;
+  /* Red background */
+  color: white;
+  /* White text color */
+  padding: 5px 10px;
+  /* Adjust padding as needed */
+  border: none;
+  /* Remove border */
+  border-radius: 3px;
+  cursor: pointer;
+  /* Show pointer cursor on hover */
+}
+
+/* Hover styles for select and button */
+#layerSelect:hover,
+#findButton:hover {
+  background-color: #e57373;
+  /* Darker red on hover */
+}
+
+/* Additional styles for the button */
+#findButton {
+  font-size: 14px;
+  /* Adjust font size */
+}
+
+
+
+
+#mapContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 10px solid #e57373;
+  /* Redish border color */
+}
+
+
+.layer-message {
+  position: absolute;
+  top: 50px;
+  /* Adjust as needed */
+  left: 10px;
+  /* Adjust as needed */
+  background-color: rgba(255, 0, 0, 0.8);
+  /* Reddish background color with transparency */
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  /* Ensure it's above the map */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  display: none;
+  /* Initially hide the message */
+}
+
+
+
+.map-info {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  /* White background with transparency */
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 1000;
+  /* Ensure it's above the map */
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.map-info h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.map-info p {
+  margin-bottom: 0;
+}
