@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DISASTER MANAGEMENT FACILITIES: NAIROBI</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="lib/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="lib/markerclusterer/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="lib/markerclusterer/MarkerCluster.css" />
+    <link rel="stylesheet" href="lib/leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.css" />
+
+
+</head>
+  <body>
+    <div id = "mapContainer">
+      <div id="map">
+        <!-- Scripts -->
+        <script src="lib/leaflet/dist/leaflet.js"></script>
+        <script src="lib/markerclusterer/leaflet.markercluster-src.js"></script>
+        <script src="lib/leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.min.js"></script>
+        <script src="lib/leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.js"></script>
+
+        <script src="js/map.js"></script>
+        <script src="lib/shpjs/shp.min.js"></script>
+        <script src="js/shapefile.js"></script>
+
+    <!-- Map Information on the bottom left -->
+    <div id="mapInfo" class="map-info">
+      <h3>About This Map</h3>
+      <p>This map provides information about disaster management facilities and resources in the area.</p>
+      <p>Data Sources: </p>
+      <p>Created By: GESA, UON</p>
+    </div>
+
+    <!-- Pop up error message when user finds nearest without selecting layer -->
+    <div id="layerMessage" class="layer-message">Please select layer to show first</div>
+
+    <!-- Top Middle buttons -->
+    <div class="routing">
+      <select id="layerSelect">
+        <option value="hy_markers">Fire Hydrants</option>
+        <option value="fire_markers">Fire Stations</option>
+        <option value="hos_markers">Major Hospitals</option>
+        <option value="set_markers">Informal Settlements</option>
+      </select>
+
+      <button id="findButton" onclick="sendLayer()">Find Nearest</button>
+    </div>
+
+    <!-- Button to switch baselayers -->
+    <button id="switchLayer" onclick="toggleMapLayer()">Toggle Map Layer</button>
+
+    <!-- Legend Area -->
+    <div id="legend" class="legend">
+      <div class="legend-item">
+        <img class="legend-icon" src="lib/markers/hydrant.png" alt="Fire Hydrant Icon" class="legend-icon">
+        <span class="legend-text">Fire Hydrants</span>
+      </div>
+
+      <div class="legend-item">
+        <img class="legend-icon" src="lib/markers/fire-station.png" alt="Fire Hydrant Icon" class="legend-icon">
+        <span class="legend-text">Fire Stations</span>
+      </div>
+
+      <div class="legend-item">
+        <img class="legend-icon" src="lib/markers/medicine.png" alt="Fire Hydrant Icon" class="legend-icon">
+        <span class="legend-text">Major Hospitals</span>
+      </div>
+
+      <div class="legend-item">
+        <img class="legend-icon" src="lib/markers/home.png" alt="Fire Hydrant Icon" class="legend-icon">
+        <span class="legend-text">Informal Settlements</span>
+      </div>
+      <!-- Show buttons -->
+      <input type="checkbox" id="showFireHydrants" onchange="toggleElement(this.checked,'hy_markers')"> Show Fire Hydrants<br>
+      <input type="checkbox" id="showFireStations" onchange="toggleElement(this.checked,'fire_markers')"> Show Fire Stations<br>
+      <input type="checkbox" id="showMajorhospitals" onchange="toggleElement(this.checked,'hos_markers')"> Show Major Hospitals<br>
+      <input type="checkbox" id="showInformalsettlements" onchange="toggleElement(this.checked,'set_markers')"> Show Informal Settlements<br>
+
+    </div>
+  </div>
+  </div>
+
+</body>
+</html>
