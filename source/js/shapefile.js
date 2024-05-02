@@ -34,7 +34,7 @@ function addHospitalToMap(path, elementType) {
             '<strong>Type:</strong> ' + 'Hospital' + '<br>' +
             '<strong>Name:</strong> ' + feature.properties.name + '<br>' +
             '<strong>County:</strong> ' + 'Nairobi' + '<br>' +
-            '<strong>Source:</strong> ' + 'source' + '<br>' +
+            '<strong>Source:</strong> ' + 'Geofabrik' + '<br>' +
             '<button onclick="drawRoute(' + feature.properties["Y"] + ',' + feature.properties["X"] + ')" style="background-color: blue; color: white; border-radius: 5px;margin: auto;">GoTo</button>'
 
           );
@@ -81,7 +81,7 @@ function addFireHydrants(path) {
             '<div style="background-color: blue; color: white; padding: 10px; border-radius: 5px;text-align: center;">' +
             '<strong>Type:</strong> ' + feature.properties.TYPE + '<br>' +
             '<strong>County:</strong> ' + 'Nairobi' + '<br>' +
-            '<strong>Source:</strong> ' + 'Source' + '<br>' +
+            '<strong>Source:</strong> ' + 'NCWSC' + '<br>' +
             '<button onclick="drawRoute(' + feature.properties["Y"] + ',' + feature.properties["X"] + ')" style="background-color: orange; color: white; border-radius: 5px;margin: auto;">GoTo</button>'
           );
 
@@ -127,7 +127,7 @@ function addInformalSettlements(path) {
             '<strong>Type:</strong> ' + 'Informal Settlment' + '<br>' +
             '<strong>Name:</strong> ' + feature.properties.Name + '<br>' +
             '<strong>County:</strong> ' + 'Nairobi' + '<br>' +
-            '<strong>Source:</strong> ' + 'Source' + '<br>' +
+            '<strong>Source:</strong> ' + 'Google Earth Pro' + '<br>' +
           '<button onclick="drawRoute(' + feature.properties["Y"] + ',' + feature.properties["X"] + ')" style="background-color: orange; color: white; border-radius: 5px;margin: auto;">GoTo</button>'
           );
 
@@ -171,7 +171,7 @@ function addFireStations(path) {
             '<strong>Type:</strong> ' + 'Fire Station' + '<br>' +
             '<strong>Name:</strong> ' + feature.properties.Name + '<br>' +
             '<strong>County:</strong> ' + 'Nairobi' + '<br>' +
-            '<strong>Source:</strong> ' + 'Source'+ '<br>' +
+            '<strong>Source:</strong> ' + 'Google Earth Pro'+ '<br>' +
             '<button onclick="drawRoute(' + feature.properties["Y"] + ',' + feature.properties["X"] + ')" style="background-color: orange; color: white; border-radius: 5px;margin: auto;">GoTo</button>'
           );
 
