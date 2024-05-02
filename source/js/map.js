@@ -33,7 +33,7 @@ map.on('locationerror', onLocationError);
 map.locate({ setView: true, maxZoom: 20 });
 
 var myLocationIcon = L.icon({
-    iconUrl: 'lib/markers/pin.png', // Path to your custom icon image
+    iconUrl: '../lib/markers/pin.png', // Path to your custom icon image
     iconSize: [32, 32], // Size of the icon
     iconAnchor: [16, 32], // Anchor point of the icon (centered horizontally, bottom)
     popupAnchor: [0, -32] // Popup offset relative to the icon's anchor
