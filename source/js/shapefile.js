@@ -2,7 +2,7 @@
 // functions and variables to facillitate addition of map layers
 var layers = {};
 var hospitalIcon = L.icon({
-  iconUrl: 'lib/markers/medicine.png', // Path to your custom icon image
+  iconUrl: '../lib/markers/medicine.png', // Path to your custom icon image
   iconSize: [32, 32], // Size of the icon
   iconAnchor: [16, 32], // Anchor point of the icon (centered horizontally, bottom)
   popupAnchor: [0, -32] // Popup offset relative to the icon's anchor
@@ -50,7 +50,7 @@ function addHospitalToMap(path, elementType) {
 }
 
 var hydrantIcon = L.icon({
-  iconUrl: 'lib/markers/hydrant.png', // Path to your custom icon image
+  iconUrl: '../lib/markers/hydrant.png', // Path to your custom icon image
   iconSize: [32, 32], // Size of the icon
   iconAnchor: [16, 32], // Anchor point of the icon (centered horizontally, bottom)
   popupAnchor: [0, -32] // Popup offset relative to the icon's anchor
@@ -95,7 +95,7 @@ function addFireHydrants(path) {
 }
 
 var settlementIcon = L.icon({
-  iconUrl: 'lib/markers/home.png', // Path to your custom icon image
+  iconUrl: '../lib/markers/home.png', // Path to your custom icon image
   iconSize: [32, 32], // Size of the icon
   iconAnchor: [16, 32], // Anchor point of the icon (centered horizontally, bottom)
   popupAnchor: [0, -32] // Popup offset relative to the icon's anchor
@@ -141,7 +141,7 @@ function addInformalSettlements(path) {
 }
 
 var fireStationIcon = L.icon({
-  iconUrl: 'lib/markers/fire-station.png', // Path to your custom icon image
+  iconUrl: '../lib/markers/fire-station.png', // Path to your custom icon image
   iconSize: [32, 32], // Size of the icon
   iconAnchor: [16, 32], // Anchor point of the icon (centered horizontally, bottom)
   popupAnchor: [0, -32] // Popup offset relative to the icon's anchor
