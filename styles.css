@@ -23,7 +23,7 @@ html {
   z-index: 1000;
   /* Ensure it's above the map */
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   /* Optional: Add a shadow */
   transition: background-color 0.2s ease;
@@ -91,7 +91,7 @@ html {
 }
 
 .legend-text {
-  font-size: 14px;
+  font-size: 12px;
   color: #e57373;
   /* Redish text color */
 }
@@ -142,7 +142,7 @@ html {
 
 /* Additional styles for the button */
 #findButton {
-  font-size: 14px;
+  font-size: 12px;
   /* Adjust font size */
 }
 
@@ -174,7 +174,7 @@ html {
   z-index: 1000;
   /* Ensure it's above the map */
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   display: none;
   /* Initially hide the message */
 }
@@ -192,7 +192,7 @@ html {
   z-index: 1000;
   /* Ensure it's above the map */
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .map-info h3 {
