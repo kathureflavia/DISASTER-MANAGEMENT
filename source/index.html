@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>DISASTER MANAGEMENT FACILITIES: NAIROBI</title>
+    <title>WAZIMA MOTO: NAIROBI</title>
 
     <!-- Styles -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="lib/leaflet/dist/leaflet.css">
-    <link rel="stylesheet" href="lib/markerclusterer/MarkerCluster.Default.css" />
-    <link rel="stylesheet" href="lib/markerclusterer/MarkerCluster.css" />
-    <link rel="stylesheet" href="lib/leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.css" />
+    <link rel="stylesheet" href="source/lib/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="source/lib/markerclusterer/MarkerCluster.Default.css" />
+    <link rel="stylesheet" href="source/lib/markerclusterer/MarkerCluster.css" />
+    <link rel="stylesheet" href="source/lib/leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.css" />
 
 
 </head>
@@ -19,20 +19,23 @@
     <div id = "mapContainer">
       <div id="map">
         <!-- Scripts -->
-        <script src="lib/leaflet/dist/leaflet.js"></script>
-        <script src="lib/markerclusterer/leaflet.markercluster-src.js"></script>
-        <script src="lib/leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.min.js"></script>
-        <script src="lib/leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.js"></script>
+        <script src="source/lib/leaflet/dist/leaflet.js"></script>
+        <script src="source/lib/markerclusterer/leaflet.markercluster-src.js"></script>
+        <script src="source/lib/leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.min.js"></script>
+        <script src="source/lib/leaflet-routing-machine-3.2.12/dist/leaflet-routing-machine.js"></script>
 
         <script src="js/map.js"></script>
-        <script src="lib/shpjs/shp.min.js"></script>
+        <script src="source/lib/shpjs/shp.min.js"></script>
         <script src="js/shapefile.js"></script>
 
     <!-- Map Information on the bottom left -->
     <div id="mapInfo" class="map-info">
       <h3>About This Map</h3>
-      <p>This map provides information about disaster management facilities and resources in the area.</p>
-      <p>Data Sources: NAIROBI CITY WATER AND SEWERAGE COMPANY </p>
+      <p>This map provides information 
+          about disaster management facilities 
+          and resources in the area.</p>
+      <p>Data Sources: NCWSC, GEOFABRIK, 
+          GOOGLE EARTH PRO </p>
       <p>Created By: FLAVIA KATHURE, UON</p>
     </div>
 
@@ -57,22 +60,22 @@
     <!-- Legend Area -->
     <div id="legend" class="legend">
       <div class="legend-item">
-        <img class="legend-icon" src="lib/markers/hydrant.png" alt="Fire Hydrant Icon" class="legend-icon">
+        <img class="legend-icon" src="source/lib/markers/hydrant.png" alt="Fire Hydrant Icon" class="legend-icon">
         <span class="legend-text">Fire Hydrants</span>
       </div>
 
       <div class="legend-item">
-        <img class="legend-icon" src="lib/markers/fire-station.png" alt="Fire Hydrant Icon" class="legend-icon">
+        <img class="legend-icon" src="source/lib/markers/fire-station.png" alt="Fire Hydrant Icon" class="legend-icon">
         <span class="legend-text">Fire Stations</span>
       </div>
 
       <div class="legend-item">
-        <img class="legend-icon" src="lib/markers/medicine.png" alt="Fire Hydrant Icon" class="legend-icon">
+        <img class="legend-icon" src="source/lib/markers/medicine.png" alt="Fire Hydrant Icon" class="legend-icon">
         <span class="legend-text">Major Hospitals</span>
       </div>
 
       <div class="legend-item">
-        <img class="legend-icon" src="lib/markers/home.png" alt="Fire Hydrant Icon" class="legend-icon">
+        <img class="legend-icon" src="source/lib/markers/home.png" alt="Fire Hydrant Icon" class="legend-icon">
         <span class="legend-text">Informal Settlements</span>
       </div>
       <!-- Show buttons -->
