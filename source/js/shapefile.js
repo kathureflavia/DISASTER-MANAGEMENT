@@ -2,7 +2,7 @@
 // functions and variables to facillitate addition of map layers
 var layers = {};
 var hospitalIcon = L.icon({
-  iconUrl: '../lib/markers/medicine.png', // Path to your custom icon image
+  iconUrl: '/source/lib/markers/medicine.png', // Path to your custom icon image
   iconSize: [32, 32], // Size of the icon
   iconAnchor: [16, 32], // Anchor point of the icon (centered horizontally, bottom)
   popupAnchor: [0, -32] // Popup offset relative to the icon's anchor
