@@ -12,7 +12,7 @@ html {
 
 #mapInfoButton {
   position: fixed; /* Fixed positioning to stay at the bottom right */
-  bottom: 60px; /* Distance from the bottom */
+  bottom: 25px; /* Distance from the bottom */
   right: 20px; /* Distance from the right */
   z-index: 1000; /* High z-index to stay on top of the map */
   background-color: white; /* Background color for better visibility */
@@ -24,9 +24,10 @@ html {
 
 #switchLayer {
   position: absolute;
-  top: 10px;
+  top: 15px;
   right: 10px;
-  background-color: #e57373;
+  background-color: #ff9999;
+  border: 1px solid #e57373;
   /* Redish background color */
   color: white;
   padding: 10px;
@@ -43,7 +44,7 @@ html {
 }
 
 #switchLayer:hover {
-  background-color: #ef5350;
+  background-color: #d94040;
   /* Darker red on hover */
 }
 
@@ -188,7 +189,7 @@ html {
 
 .map-info {
   position: absolute;
-  bottom: 120px;
+  bottom: 55px;
   right: 10px;
   background-color: rgba(255, 255, 255, 0.9);
   /* White background with transparency */
