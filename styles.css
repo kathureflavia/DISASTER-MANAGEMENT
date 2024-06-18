@@ -12,7 +12,7 @@ html {
 
 #mapInfoButton {
   position: fixed; /* Fixed positioning to stay at the bottom right */
-  bottom: 60px; /* Distance from the bottom */
+  bottom: 100px; /* Distance from the bottom */
   right: 20px; /* Distance from the right */
   z-index: 1000; /* High z-index to stay on top of the map */
   background-color: white; /* Background color for better visibility */
