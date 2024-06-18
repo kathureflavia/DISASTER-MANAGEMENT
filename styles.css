@@ -10,6 +10,18 @@ html {
   z-index: 0;
 }
 
+#mapInfoButton {
+  position: fixed; /* Fixed positioning to stay at the bottom right */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* High z-index to stay on top of the map */
+  background-color: white; /* Background color for better visibility */
+  padding: 10px 15px; /* Padding for better appearance */
+  border: 1px solid #ccc; /* Border for better appearance */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
 #switchLayer {
   position: absolute;
   top: 10px;
@@ -36,12 +48,6 @@ html {
 }
 
 
-
-
-#switchLayer:hover {
-  background-color: #0056b3;
-  /* Button color on hover */
-}
 
 .map-info {
   display: none; /* Initially hide the mapInfo div */
@@ -98,19 +104,6 @@ html {
   color: #e57373;
   /* Redish text color */
 }
-
-#mapInfoButton {
-  position: fixed; /* Fixed positioning to stay at the bottom right */
-  bottom: 20px; /* Distance from the bottom */
-  right: 20px; /* Distance from the right */
-  z-index: 1000; /* High z-index to stay on top of the map */
-  background-color: white; /* Background color for better visibility */
-  padding: 10px 15px; /* Padding for better appearance */
-  border: 1px solid #ccc; /* Border for better appearance */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor on hover */
-}
-
 
 
 /* Styles for select with ID layerSelect */
