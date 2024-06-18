@@ -175,3 +175,14 @@ function findNearestPoint(layerType) {
         console.log('No nearest point found');
     }
 }
+
+
+
+function toggleMapInfo() {
+  var mapInfo = document.getElementById("mapInfo");
+  if (mapInfo.style.display === "none" || mapInfo.style.display === "") {
+    mapInfo.style.display = "block"; // Show the mapInfo div
+  } else {
+    mapInfo.style.display = "none"; // Hide the mapInfo div
+  }
+}
