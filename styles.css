@@ -99,7 +99,12 @@ html {
   /* Redish text color */
 }
 
-
+#mapInfoButton, .map-info {
+  position: relative;
+  z-index: 1000; /* Adjust the value as needed to ensure it's above the map */
+  bottom: 0;
+  right: 0;
+}
 
 
 
