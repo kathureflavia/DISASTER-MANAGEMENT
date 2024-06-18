@@ -99,12 +99,17 @@ html {
   /* Redish text color */
 }
 
-#mapInfoButton{
-  z-index: 1000; /* Adjust the value as needed to ensure it's above the map */
-  bottom: 0;
-  right: 0;
+#mapInfoButton {
+  position: fixed; /* Fixed positioning to stay at the bottom right */
+  bottom: 20px; /* Distance from the bottom */
+  right: 20px; /* Distance from the right */
+  z-index: 1000; /* High z-index to stay on top of the map */
+  background-color: white; /* Background color for better visibility */
+  padding: 10px 15px; /* Padding for better appearance */
+  border: 1px solid #ccc; /* Border for better appearance */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
 }
-
 
 
 
