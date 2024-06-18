@@ -43,6 +43,9 @@ html {
   /* Button color on hover */
 }
 
+.map-info {
+  display: none; /* Initially hide the mapInfo div */
+}
 
 
 
