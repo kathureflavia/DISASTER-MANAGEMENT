@@ -24,8 +24,8 @@ html {
 
 #switchLayer {
   position: absolute;
-  top: 15px;
-  right: 10px;
+  bottom: 15px;
+  left: 10px;
   background-color: #ff9999;
   border: 1px solid #e57373;
   /* Redish background color */
